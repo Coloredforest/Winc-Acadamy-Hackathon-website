@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stef & Lotje</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+  <div class="container4">
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="over.html">Over</a>
+        <a href="auteur.html">Auteur</a>
+        <a href="https://www.mijnbestseller.nl/shop/index.php/catalog/product/view/id/570093/s/stef-lotje-vieren-de-jaarfeesten-246866-www-mijnbestseller-nl/" target="_blank">Shop</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <form name="contact" method="POST" data-netlify="true" action="/index.html">
+      <p>
+      <label>Naam: <br> <input type="text" name="name" /></label>
+      </p>
+
+      <p>
+      <label>Email: <br><input type="email" name="email" /></label>    
+      </p>
+
+      <p>
+      <label>Telefoonnummer: <br><input type="tel"/></label>
+      </p>
+
+      <p>
+      <label>Leeftijd: <br><input type="number"/></label>    
+      </p>
+
+      <p>
+      <label>Geboortedatum: <br><input type="date" /></label><br>
+      </p>
+
+      <p>             
+      <label for="klant">Reeds Stef & Lotje gekocht</label><br>
+      <input type="radio" id="klant" name="klant" value="klant"><br>
+      <label for="prospect">Stef & Lotje nog niet gekocht</label><br>
+      <input type="radio" id="prospect" name="prospect" value="prospect">
+      </p>
+
+      <p>Waar gaat uw vraag over?<br><br>
+      <label for="meerinfo">Ik wil graag meer informatie</label><br>
+      <input type="checkbox" name="meerinfo" id="meerinfo"> <br>
+      <label for="correctie">Ik wil een correctie doorgeven</label><br>
+      <input type="checkbox" name="correctie" id="correctie"> <br>        
+      <label for="anders">Ik heb een andere vraag</label><br>
+      <input type="checkbox" name="anders" id="anders"><br>
+      </p>
+
+      <p> 
+      <label>Vraag: <br> <textarea name="vraag" ></textarea></label>
+      </p>   
+
+      <p>
+      <label for="uploadgerecht">Upload bestand</label><br>
+      <input type="file" name="uploadgerecht" id="uploadgerecht">
+      </p>
+
+      <hr>
+
+      <p>
+      <button type="submit">Send</button>    
+      </p>   
+
+      <p>
+      <button type="reset">reset</button>
+      </p> 
+
+  </form>
+
+  <footer>
+    <p>copyright</p>
+    </footer>
+  </div>
+</body>
+    
+</html>

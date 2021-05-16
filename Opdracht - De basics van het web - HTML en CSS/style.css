@@ -1,0 +1,479 @@
+body        {
+    background-color: #FFF9EB;
+    position: relative;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 0px;
+    min-width: 500px;
+    max-width: 1000px;
+    font-family: sans-serif;
+}
+
+.container1{ /* CONTAINTER - INDEX*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 54px auto 0.1fr 0.1fr 1fr 0.2fr;
+    grid-template-areas: 
+    "nav nav nav nav nav nav"
+    "cover cover beschrijving beschrijving beschrijving beschrijving"
+    "koop koop informatie informatie informatie informatie"
+    "reviews reviews reviews reviews reviews reviews"
+    "review1 review1 review2 review2 review3 review3"
+    "footer footer footer footer footer footer";
+    grid-gap: 0.5rem;
+}
+
+.container2{ /* CONTAINTER - AUTEUR*/
+    display: grid;
+    grid-template-columns: 0.3fr 1fr ;
+    grid-template-rows: 54px 0.1fr 0.2fr;
+    grid-template-areas: 
+    "nav nav"
+    "fotoauteur overmij"
+    "footer footer";
+    grid-gap: 0.5rem;
+}
+
+.container3{ /* CONTAINTER - OVER*/
+    display: grid;
+    grid-template-columns: 0.5fr 0.8fr;
+    grid-template-rows: 54px 0.5fr 0.1fr 0.2fr;
+    grid-template-areas: 
+    "nav nav"
+    "coverback table"
+    "koop koop"
+    "footer footer";
+    grid-gap: 0.8rem;  
+}
+
+.container4{ /* CONTAINTER - CONTACT*/
+    display: grid;
+    grid-template-columns: 0.3fr 1fr ;
+    grid-template-rows: 54px 0.1fr 0.2fr;
+    grid-template-areas: 
+    "nav nav"
+    "form form"
+    "footer footer";
+    grid-gap: 0.5rem;  
+}
+
+/*NAVIGATIE */
+
+nav    {
+    grid-area: nav;
+    background-color:#D38866;
+    margin: 0px 0px 0px 0px;
+}
+
+nav a   {
+    float: left;
+    display: block;
+    color: #8E2401;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration:none;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background-color: #FFF9EB;
+    color: #D38866;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #D38866;
+    grid-area: footer;
+}
+
+footer p{
+    text-align: center;
+}
+
+/*INDEX - COVER */
+
+#cover{
+    grid-area: cover;
+}
+
+#indexcover {
+    max-width: 100%;
+}
+
+/*INDEX - BOEKBESCHRIJVING */
+
+#beschrijving{
+    grid-area: beschrijving;
+}
+
+#beschrijving h1{
+    text-align: center;
+    font-size: 28px;
+    color: #8E2401;
+    letter-spacing: 2px;
+    margin: 5px 0px 0px 0px
+}
+
+#beschrijving h2{
+    text-align: center;
+    font-size: 18px;
+    color: #882f11;
+    letter-spacing: 0px;
+    margin: 0px;
+}
+
+#beschrijving p{
+    text-align: justify;
+    font-size: 14px;
+    font-weight: bold;
+    color: #D38866;
+    letter-spacing: 0px;
+    margin: 5px;
+    padding: 10px;
+}
+
+/*INDEX - KOOP */
+
+#koop{
+    grid-area: koop;
+    background-color: #882f11 ;
+}
+
+#koop a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration:none;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+/*INDEX - MEER INFORMATIE */
+
+#informatie{
+    grid-area: informatie;
+    background-color: #882f11 ;
+}
+
+#informatie a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 18px 20px;
+    text-decoration:none;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+/*INDEX - REVIEWS */
+#reviews{
+    grid-area: reviews;
+    font-size: 28px;
+    font-weight: bold;
+    color: #882f11;
+    letter-spacing: 5px;
+    margin: 0px;
+    padding: 10px;
+}
+
+#reviews p{
+    text-align: center;
+}
+
+/*INDEX - REVIEW1 */
+
+#review1{
+    grid-area: review1;
+}
+
+#review1 p{
+    text-align: justify;
+    font-size: 14px;
+    font-weight: bold;
+    color: #D38866;
+    letter-spacing: 0px;
+    margin: 5px;
+    padding: 10px;
+}
+
+#review1 h1{
+    text-align: center;
+    font-size: 20px;
+    color: #882f11;
+    margin: 5px 0px 0px 0px;
+    font-style: italic;
+}
+
+#review1 h2{
+    text-align: center;
+    font-size: 16px;
+    color: #882f11;
+    margin: 5px 0px 0px 0px;
+    font-style: italic;
+}
+
+#persoon1 {
+    max-width: 100%;
+    border-radius: 100%;
+    margin: 20px 0px 0px 0px;
+}
+
+/*INDEX - REVIEW2 */
+
+#review2{
+    grid-area: review2;
+}
+
+#review2 p{
+    text-align: justify;
+    font-size: 14px;
+    font-weight: bold;
+    color: #D38866;
+    letter-spacing: 0px;
+    margin: 5px;
+    padding: 10px;
+}
+
+#review2 h1{
+    text-align: center;
+    font-size: 20px;
+    color: #882f11;
+    margin: 5px 0px 0px 0px;
+    font-style: italic;
+}
+
+#review2 h2{
+    text-align: center;
+    font-size: 16px;
+    color: #882f11;
+    margin: 5px 0px 0px 0px;
+    font-style: italic;
+}
+
+#persoon2 {
+    max-width: 100%;
+    border-radius: 100%;
+    margin: 20px 0px 0px 0px;
+}
+
+/*INDEX - REVIEW3 */
+
+#review3{
+    grid-area: review3;
+}
+
+#review3 p{
+    text-align: justify;
+    font-size: 14px;
+    font-weight: bold;
+    color: #D38866;
+    letter-spacing: 0px;
+    margin: 5px;
+    padding: 10px;
+}
+
+#review3 h1{
+    text-align: center;
+    font-size: 20px;
+    color: #882f11;
+    margin: 5px 0px 0px 0px;
+    font-style: italic;
+}
+
+#review3 h2{
+    text-align: center;
+    font-size: 16px;
+    color: #882f11;
+    margin: 5px 0px 0px 0px;
+    font-style: italic;
+}
+
+#persoon3 {
+    max-width: 100%;
+    border-radius: 100%;
+    margin: 20px 0px 0px 0px;
+}
+
+/* OVER*/
+
+#coverback{
+    grid-area: coverback;
+}
+
+#overcoverback{
+    max-width: 100%;
+}
+
+table{
+    grid-area: table;
+    border: solid;
+    border-color: black;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+th {
+    text-align:center;
+    font-size: 14px;
+    padding: 10px;
+    color: #8E2401;
+    background-color: #FFF9EB;
+    border: solid;
+    border-color: #D38866;
+}
+
+td {
+    margin: 100px;
+    padding: 50px;
+    text-align: center;
+}
+
+caption{
+    text-align: center;
+    font-size: 24px;
+    color: #8E2401;
+    margin-bottom: 10px;
+}
+
+/* AUTEUR*/
+
+#fotoauteur{
+    grid-area: fotoauteur;
+}
+    
+#fototessie {
+    max-width: 80%;
+    border-radius: 100%;
+    margin: 20px auto auto auto;
+    border: solid;
+    border-color: #D38866;
+}
+
+#overmij{
+    grid-area: overmij;
+    margin: 5px 0px 0px 0px;
+    padding: 5px;
+    text-align: justify;
+    font-size: 14px;
+    font-weight: bold;
+    color: #D38866;
+    letter-spacing: 0px;
+    margin: 5px;
+    padding: 10px;
+    border: solid;
+}
+
+#overmij h1{
+    text-align: center;
+    font-size: 28px;
+    color: #8E2401;
+    letter-spacing: 2px;
+    margin: 5px 0px 0px 0px
+}
+        
+#overmij h2{
+    text-align: center;
+    font-size: 18px;
+    color: #882f11;
+    letter-spacing: 0px;
+    margin: 0px;
+}
+        
+#overmij p{
+    text-align: justify;
+    font-size: 14px;
+    font-weight: bold;
+    color: #D38866;
+    letter-spacing: 0px;
+    margin: 5px;
+    padding: 10px;
+}
+
+/* CONTACT*/
+
+form{
+    grid-area: form;
+}
+
+input{
+    width: 300px;
+    outline: none;
+}
+
+textarea {
+    border-style: solid;
+    border-color: red;
+}
+
+textarea:focus {
+    border-style: solid;
+    border-color: green;
+}
+
+@media (max-width: 500px) {
+   
+    body        {
+        background-color: #FFF9EB;
+        position: relative;
+        margin-left: 20%;
+        margin-right: 20%;
+        margin-top: 0px;
+        min-width: 300px;
+        max-width: 500px;
+        font-family: sans-serif;
+    }
+
+    .container1{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.1fr 0.1fr 0.1fr 0.5fr 0.5fr 0.5fr 0.2fr;
+    grid-template-areas: 
+    "nav"
+    "cover" 
+    "beschrijving"
+    "koop"
+    "informatie"
+    "reviews"
+    "review1" 
+    "review2" 
+    "review3"
+    "footer";
+    grid-gap: 0.3rem; } 
+
+    .container2{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.2fr;
+    grid-template-areas: 
+    "nav"
+    "fotoauteur"
+    "overmij"
+    "footer";    
+    grid-gap: 0.3rem; } 
+
+    .container3{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.1fr 0.2fr;
+    grid-template-areas: 
+    "nav"
+    "coverback"
+    "table"
+    "koop"
+    "footer";    
+    grid-gap: 0.3rem; } 
+
+    .container4{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.5fr 0.2fr;
+    grid-template-areas: 
+    "nav"
+    "form"
+    "footer";    
+    grid-gap: 0.3rem; } 
+}
+
